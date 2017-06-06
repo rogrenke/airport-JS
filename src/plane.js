@@ -9,3 +9,11 @@ Plane.prototype.isFlying = function() {
 		return false;
 	}
 };
+
+Plane.prototype.switchStatus = function() {
+	if (this.status == "flying") {
+		this.status = "landed";
+	} else {
+		this.status = "flying";
+	}
+};

@@ -1,9 +1,11 @@
 describe("Plane", function() {
 
 	var plane;
+	var airport;
 
 	beforeEach(function() {
 		plane = new Plane();
+		airport = new Airport();
 	});
 
 	it("is flying on creation", function() {
@@ -13,4 +15,9 @@ describe("Plane", function() {
 	it("returns true if it's flying and the isFlying method is called on it", function() {
 		expect(plane.isFlying()).toEqual(true);
 	});
+
+	it("is returns false if it'landed and the isFlying method is called on it", function() {
+		airport.land(plane);
+		expect(plane.isFlying()).toEqual(false);
+	})
 });
