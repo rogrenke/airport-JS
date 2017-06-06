@@ -9,5 +9,6 @@ Airport.prototype.land = function(plane) {
 
 Airport.prototype.start = function(plane) {
 	var index = this.planes.indexOf(plane);
+	plane.switchStatus();
 	return this.planes.splice(index, 1);
 }
