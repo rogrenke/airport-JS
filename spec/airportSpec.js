@@ -16,4 +16,10 @@ describe("Airport", function() {
 		airport.land(plane);
 		expect(airport.planes[0]).toEqual(plane);
 	});
+
+	it("is expected to remove the plane if the start function is called on it with plane as an argument", function() {
+		airport.land(plane);
+		expect(airport.start(plane)).toEqual([plane]);
+		expect(airport.planes[0]).toEqual(undefined);
+	});
 });
