@@ -1,12 +1,12 @@
-// describe("Airport", function() {
+describe("Airport", function() {
 
-// 	var airport;
+	var airport;
 
-// 	beforeEach(function() {
-// 		airport = new Airport();
-// 	});
+	beforeEach(function() {
+		airport = new Airport();
+	});
 
-// 	it("It is created as an object with an empty planes array", function() {
-// 		expect(airport.planes).toEqual([]);
-// 	});
-// });
+	it("It is created as an object with an empty planes array", function() {
+		expect(airport.planes).toEqual([]);
+	});
+});
